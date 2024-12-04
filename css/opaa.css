@@ -1,0 +1,234 @@
+*{
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 254, 254);
+}
+body{ /*Fundo*/
+    background-color: rgb(26, 25, 25);
+    
+}
+
+/*Começo da aparencia da calculadora da Força G*/
+.calc{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgb(211, 207, 202);
+    padding: 7px;
+    border-radius: 15px;
+}
+label{
+    color: black;
+}
+input{
+    color: black;
+}
+.resultado{
+    color: black;
+}
+.calcular{
+    color: black;
+}
+/*Final da aparencia da calculadora da Força G*/
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.nav-bar{ /*Nav Bar*/
+    grid-column: 1/8;
+    background-color: rgb(45, 39, 63);
+    padding: 15px;
+    border: 1px solid white;
+}
+
+a{ /*Decoração dos links*/
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.40s; /*Transição foda nos links*/
+}
+
+ul{/*Espaços entre e alinnhamento dos links*/
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+a:hover{ /*Se o mouse passar em cima dos links*/
+    background-color: rgb(24, 21, 34);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: underline white;
+}
+
+h1.titulo{
+    grid-column: 1/8;
+    text-align: center;
+
+}
+
+#claro{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.sol{
+
+    color: black;
+    width: 35px;
+    height: auto;
+}
+.content{ /*Conteudo*/
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(45, 39, 63);
+    padding: 10px;
+    border: 1px solid white;
+    align-items: center;
+}
+
+
+.container-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    grid-column: 1 / 8;
+}
+
+.claro a:hover { /*Isso meio que significa, Quando a Class "claro" for adicionada ao body, ao mouse passar por cima...*/
+    background-color: rgb(80, 74, 74);
+    color: white;
+}
+
+.perfil-container {
+    text-align: center;
+    background-color: rgb(45, 39, 63);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.perfil-container h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.perfil-form {
+    margin: 15px 0;
+}
+
+.perfil-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.perfil-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: rgb(45, 39, 63);
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.perfil-form button:hover {
+    background-color: rgb(80, 74, 74);
+}
+
+.perfil-form button[type="submit"]:nth-child(2) {
+    background-color: red;
+}
+
+.perfil-form button[type="submit"]:nth-child(2):hover {
+    background-color: darkred;
+}
+
+/* Estilo para o nome do usuário */
+.user-info {
+    position: absolute;
+    right: 20px; /* Ajuste o valor conforme necessário */
+    top: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.user-info .user-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffcc00; /* Cor de destaque */
+    text-decoration: none;
+}
+
+.user-info .user-name:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+    }
+    .container-flex{
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+    }
+    .graf{
+        width: 400px;
+    }
+    .content{
+        width: 520px;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width:600px) {
+    .container-flex{
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+    }
+    .graf{
+        width: 400px;
+    }
+    .content{
+        width: 590px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width:800px) {
+    .container-flex{
+        display: flex;
+        flex-flow:row wrap;
+        align-items:flex-start
+    }
+    .graf{
+        width: 339px
+    }
+
+}
+
+@media only screen and (max-width: 1500px) and (min-width:1000px) {
+    .container-flex{
+        display: flex;
+        flex-flow:row wrap;
+        align-items:flex-start
+    }
+    .graf{
+        width: 400px
+    }
+
+}

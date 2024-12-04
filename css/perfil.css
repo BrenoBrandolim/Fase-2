@@ -1,0 +1,68 @@
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(26, 25, 25);
+    padding: 20px;
+}
+
+.perfil-card {
+    background-color: rgb(45, 39, 63);
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.perfil-card h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.perfil-card p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.perfil-card form {
+    margin: 15px 0;
+}
+
+.perfil-card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.perfil-card button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(211, 207, 202);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+}
+
+.perfil-card button:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.perfil-card .delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.perfil-card .delete-btn:hover {
+    background-color: darkred;
+}
